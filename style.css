@@ -1,0 +1,191 @@
+
+body {
+    background-image: linear-gradient(to right,
+     rgb(39, 39, 58), rgb(28, 39, 66));
+}
+
+h1 {
+  color: rgb(167, 231, 238);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+button {
+  padding: 10px 25px;
+  background-color:  rgb(223, 145, 81);
+  cursor: pointer;
+  color:rgb(213, 223, 231);
+  border:  rgb(255, 255, 255);
+  border-radius: 4px;
+
+
+}
+
+button:hover {
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: rgb(216, 131, 21);
+  border:  rgb(255, 255, 255);
+  color:rgb(213, 223, 231);
+  border-radius: 4px;
+    transition: 1s;
+
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1b24;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(29, 27, 27);
+  border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(29, 27, 27);
+  border-radius: 5px
+}
+
+P {
+  color:rgb(167, 231, 238);
+  text-align: center ;
+  font-family: 'Segoe UI';
+  font-size: 20px;
+  padding: 20px;
+  
+}
+
+::-moz-selection {
+  background: rgba(39, 212, 255, 0.719);
+}
+
+::selection {
+  background: rgba(39, 212, 255, 0.719);
+}
+p1 {
+  color: #57BFCB;
+}
+
+.tooltip {
+  position: relative;
+  display: center;
+  text-align: center;
+
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(43, 74, 158);
+  text-align: center;
+  text-shadow: 0 0 3px rgb(73, 46, 192);
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: 'Segoe UI';
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: 38%; 
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; 
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  position: absolute;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav {
+  max-width: 1080px;
+  mask-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, #ffffff 25%, #ffffff 75%, 
+  rgb(255, 255, 255) 100%);
+  margin: 0 auto;
+  padding: 20px 0;
+  border-radius: 35%;
+  box-shadow: black;
+  text-shadow: bl
+
+}
+
+
+ul#list-nav li {
+   border:2px solid blue;
+   float:left;
+   overflow:hidden;
+}
+
+li.first{
+   border-top-left-radius:15px;
+   border-bottom-left-radius:15px;
+}
+li.last{
+    border-top-right-radius:15px;
+   border-bottom-right-radius:15px;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%,
+   rgb(255, 255, 255) 75%, rgb(255, 255, 255) 100%);
+  
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform:uppercase;
+  color: rgba(68, 105, 200, 0.841);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.252), inset 0 0 1px rgb(255, 255, 255);
+  color: rgba(68, 105, 200, 0.841);
+  border-radius:  6%;
+}
+
