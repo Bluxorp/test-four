@@ -1,3 +1,40 @@
+/*
+Table of Contents or smthn idk
+==============================
+line              Content
+9 - 32            Anything that starts with '::'. Dunno what these are
+35 - 141          Element styles. These classes are limited to the element they style
+149 - 207         General Styles. Can be applied to any element
+
+Sorted by PiXION on Aug. 16, 2021. Please do not remove
+*/
+
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1b24;
+
+}
+::-moz-selection {
+  background: rgba(39, 212, 255, 0.719);
+}
+
+::selection {
+  background: rgba(39, 212, 255, 0.719);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(29, 27, 27);
+  border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(29, 27, 27);
+  border-radius: 5px
+}
+
 
 body {
     background-image: linear-gradient(to right,
@@ -10,6 +47,15 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
+
+h1#title-TestFour {
+  color: rgb(167, 231, 238);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
 
 button {
   padding: 10px 25px;
@@ -33,42 +79,71 @@ button:hover {
 
 }
 
-::-webkit-scrollbar {
-  width: 11px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1c1b24;
-
-}
-
-
-::-webkit-scrollbar-thumb {
-  background: rgb(29, 27, 27);
-  border-radius: 5px
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(29, 27, 27);
-  border-radius: 5px
-}
-
 P {
   color:rgb(167, 231, 238);
   text-align: center ;
   font-family: 'Segoe UI';
   font-size: 20px;
   padding: 20px;
-  
+
 }
 
-::-moz-selection {
-  background: rgba(39, 212, 255, 0.719);
+nav {
+  max-width: 1080px;
+  mask-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, #ffffff 25%, #ffffff 75%,
+  rgb(255, 255, 255) 100%);
+  margin: 0 auto;
+  padding: 20px 0;
+  border-radius: 35%;
+  box-shadow: black;
+  text-shadow: bl
+
 }
 
-::selection {
-  background: rgba(39, 212, 255, 0.719);
+
+ul#list-nav li {
+   border:2px solid blue;
+   float:left;
+   overflow:hidden;
 }
+
+li.first{
+   border-top-left-radius:15px;
+   border-bottom-left-radius:15px;
+}
+li.last{
+    border-top-right-radius:15px;
+   border-bottom-right-radius:15px;
+}
+
+nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%,
+   rgb(255, 255, 255) 75%, rgb(255, 255, 255) 100%);
+
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform:uppercase;
+  color: rgba(68, 105, 200, 0.841);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.252), inset 0 0 1px rgb(255, 255, 255);
+  color: rgba(68, 105, 200, 0.841);
+  border-radius:  6%;
+}
+
 p1 {
   color: #57BFCB;
 }
@@ -80,7 +155,7 @@ p1 {
 
 }
 
-.tooltip .tooltiptext {
+.tooltip span.tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: rgb(0, 0, 0);
@@ -93,14 +168,14 @@ p1 {
   position: absolute;
   z-index: 1;
   top: -2px;
-  left: 38%; 
+  left: 38%;
 }
 
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
   top: 50%;
-  left: 100%; 
+  left: 100%;
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
@@ -132,60 +207,3 @@ p1 {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-nav {
-  max-width: 1080px;
-  mask-image: linear-gradient(90deg, rgb(255, 255, 255) 0%, #ffffff 25%, #ffffff 75%, 
-  rgb(255, 255, 255) 100%);
-  margin: 0 auto;
-  padding: 20px 0;
-  border-radius: 35%;
-  box-shadow: black;
-  text-shadow: bl
-
-}
-
-
-ul#list-nav li {
-   border:2px solid blue;
-   float:left;
-   overflow:hidden;
-}
-
-li.first{
-   border-top-left-radius:15px;
-   border-bottom-left-radius:15px;
-}
-li.last{
-    border-top-right-radius:15px;
-   border-bottom-right-radius:15px;
-}
-
-nav ul {
-  text-align: center;
-  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%,
-   rgb(255, 255, 255) 75%, rgb(255, 255, 255) 100%);
-  
-
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  padding: 18px;
-  font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-transform:uppercase;
-  color: rgba(68, 105, 200, 0.841);
-  font-size: 18px;
-  text-decoration: none;
-  display: block;
-}
-
-nav ul li a:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.252), inset 0 0 1px rgb(255, 255, 255);
-  color: rgba(68, 105, 200, 0.841);
-  border-radius:  6%;
-}
-
