@@ -1,0 +1,20 @@
+/*
+    THIS FILE IS FOR STYLING <noscript> CHILDREN
+*/
+
+noscript {
+    background-image: linear-gradient(to right,
+     rgb(39, 39, 58), rgb(28, 39, 66));
+}
+
+noscript h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+noscript p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding-left: 20%;
+}

@@ -2,13 +2,12 @@
 Table of Contents or smthn idk
 ==============================
 line              Content
-9 - 32            Anything that starts with '::'. Dunno what these are
-35 - 141          Element styles. These classes are limited to the element they style
-149 - 207         General Styles. Can be applied to any element
+12 - 36            Anything that starts with '::'. Dunno what these are
+39 - 141          Element styles. These classes are limited to the element they style
+147 - 210         General Styles. Can be applied to any element
 
 Sorted by PiXION on Aug. 16, 2021. Please do not remove
 */
-
 
 ::-webkit-scrollbar {
   width: 11px;
@@ -25,6 +24,7 @@ Sorted by PiXION on Aug. 16, 2021. Please do not remove
 ::selection {
   background: rgba(39, 212, 255, 0.719);
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgb(29, 27, 27);
   border-radius: 5px
@@ -48,7 +48,7 @@ h1 {
   font-size: 40px;
 }
 
-h1#title-TestFour {
+h1#title-Test4 {
   color: rgb(167, 231, 238);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -64,8 +64,6 @@ button {
   color:rgb(213, 223, 231);
   border:  rgb(255, 255, 255);
   border-radius: 4px;
-
-
 }
 
 button:hover {
@@ -79,7 +77,8 @@ button:hover {
 
 }
 
-P {
+/* Perhaps you meant <p> instead of <P>? */
+p {
   color:rgb(167, 231, 238);
   text-align: center ;
   font-family: 'Segoe UI';
@@ -100,7 +99,6 @@ nav {
 
 }
 
-
 ul#list-nav li {
    border:2px solid blue;
    float:left;
@@ -120,8 +118,6 @@ nav ul {
   text-align: center;
   background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%,
    rgb(255, 255, 255) 75%, rgb(255, 255, 255) 100%);
-
-
 }
 
 nav ul li {
@@ -152,14 +148,13 @@ p1 {
   position: relative;
   display: center;
   text-align: center;
-
 }
 
 .tooltip span.tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: rgb(0, 0, 0);
-  color: rgb(43, 74, 158);
+  color: rgb(93, 114, 172);
   text-align: center;
   text-shadow: 0 0 3px rgb(73, 46, 192);
   padding: 5px 0;
@@ -182,13 +177,19 @@ p1 {
   border-color: transparent transparent transparent black;
 }
 
-
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
   position: absolute;
 }
 
+/*
+=======================================================================
+I'm planning to remove this part, since im just gonna make the webpages
+be viewed in an iframe. Expect this to go poof later on
+
+-PiXIOn
+=======================================================================
+*/
 .dropdown {
   position: relative;
   display: inline-block;
