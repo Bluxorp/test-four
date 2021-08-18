@@ -141,8 +141,28 @@ nav ul li a:hover {
 }
 
 /* div.codeblock{} */
+div#rotFrame-divBox{
+  padding-left: auto;
+  border: none;  /* 2px solid red; */
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+}
+
+iframe#rotating-frame{
+  position: relative;
+  padding-left: 0%;
+  border: none;  /* 5px solid white; */
+  /* text-align: left; */
+  width: auto;
+  height: auto;
+}
 
 p1 {
+  color: #57BFCB;
+}
+
+a {
   color: #57BFCB;
 }
 
