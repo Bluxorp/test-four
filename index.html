@@ -17,6 +17,7 @@ Thanks for cheking us out! :3
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "icon" href ="./assets/img/icon.png" type = "image/x-icon">
+    <script src="./assets/scripts/index.js"></script>
     <title>Test 4</title>
   </head>
   <body>
@@ -28,24 +29,24 @@ Thanks for cheking us out! :3
     <nav>
     <ul>
       <li>
-        <a>Home</a>
+        <a onclick="rotateHtml('home')">Home</a>
       </li>
       <li>
-        <a>About</a>
+        <a onclick="rotateHtml('about')">About</a>
       </li>
       <li>
-        <a>Links</a>
+        <a onclick="rotateHtml('links')">Links</a>
       </li>
       <li>
-        <a>Fun</a>
+        <a onclick="rotateHtml('fun')">Fun</a>
       </li>
       <li>
-        <a>Downloads</a>
+        <a onclick="rotateHtml('downloads')">Downloads</a>
       </li>
     </ul>
   </nav>
 
-  <iframe src="./pages/fun.html" title="Fun, is it?" style="border: none;" />
+  <iframe id="rotating-frame" style="border: none;" />
 
   </body>
 </html>
